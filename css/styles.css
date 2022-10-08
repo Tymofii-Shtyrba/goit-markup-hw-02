@@ -9,8 +9,39 @@
     --third-bg-color: #F5F4FA;
 }
 
-.main {
+/*General_styles*/
+
+body {
     background-color: var(--main-bg-color);
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     color: var(--main-text-color);
+}
+
+.list {
+    list-style-type: none;
+}
+
+.list a {
+    text-decoration: none;
+}
+
+/*Navigation_bar*/
+
+.nav-bar {
+    background: var(--main-bg-color);
+    
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--first-logo-color);
+    text-decoration: inherit;
+}
+
+.second-logo {
+    color:  var(--second-logo-color);
 }
