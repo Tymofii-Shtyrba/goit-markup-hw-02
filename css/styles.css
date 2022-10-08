@@ -43,30 +43,11 @@ body {
 
 /*Navigation_bar*/
 
-.nav-bar {
+.list .nav-link:visited {
     color: var(--main-text-color);
-    background: var(--second-bg-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
 }
 
- {
-    color: var(--first-logo-color);
-}
-
-
-.mail, .tel {
-    color: var(--description-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-}
-
-.mail:hover, .tel:hover .nav-link:hover {
+.list .nav-link:hover {
     color: var(--first-logo-color);
 }
 
