@@ -1,61 +1,82 @@
 :root {
-    --main-text-color: #212121;
-    --description-color: #757575;
-    --second-bg-color: #ffffff;
-    --first-logo-color: #2196f3;
+    --main-color: #F5F5F5;
+    --nav-bar-color: #FFFFFF;
+    --second-color: #2F303A;
+    --team-section-color: #F5F4FA;
+    --first-logo-color: #2196F3;
     --second-logo-color: #000000;
-    --third-bg-color: #2f303a;
-    --nav-bar-shadow: #ececec;
-    --main-bg-color: #f5f4fa;
-    --semi-transparent-text: #ffffff99;
+    --main-text-color: #212121;
+    --descriprion-color: #757575;
+    --basement-contakts-color: #FFFFFF99;
 }
 
-/*General_styles*/
+/*Global_styles*/
 
 body {
-    background-color: var(--main-bg-color);
+    background: var(--main-color);
     font-family: 'Roboto', sans-serif;
     color: var(--main-text-color);
-}
-
-.list {
-    list-style-type: none;
 }
 
 .link {
     text-decoration: none;
 }
 
-/*Logo_styles*/
+.list {
+    list-style: none;
+}
+/*Navigation-bar*/
+
+.nav-bar {
+    background: var(--nav-bar-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+/*Logo*/
 
 .logo {
+    color: var(--first-logo-color);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--first-logo-color);
 }
 
 .second-logo {
     color: var(--second-logo-color);
 }
 
-/*Navigation_bar*/
+/*Navigation_links*/
 
-.list .nav-link:visited {
-    color: var(--main-text-color);
+.nav-link {
+    color: inherit;
 }
 
-.list .nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--first-logo-color);
+}
+
+/*Contacts*/
+
+.contacts-nav {
+    color: var(--descriprion-color);
+}
+
+.contacts-nav:hover,
+.contacts-nav:focus {
     color: var(--first-logo-color);
 }
 
 /*Face*/
 
 .face {
-    background: var(--third-bg-color);
-    color: var(--main-bg-color);
+    background: var(--second-color);
+    color: var(--nav-bar-color);
 }
 
 .face-header {
@@ -64,44 +85,44 @@ body {
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 .order-button {
-    color: inherit;
     background: var(--first-logo-color);
-    border: none;
+    color: inherit;
+    border-style: none;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    text-align: center;
-    letter-spacing: 0.06em;
 }
 
 /*Features*/
 
-.invisible-header {
-    color: var(--main-bg-color);
+.features h2 {
+    color: var(--main-color);
 }
 
 .features h3 {
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.1;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
 .features p {
-    color: var(--description-color);
+    color: var(--descriprion-color);
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
-/*Activities_gallery*/
+/*Activities gallery*/
 
-.activities {
+.activities h2 {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -110,6 +131,10 @@ body {
 }
 
 /*Team_section*/
+
+.team {
+    background: var(--team-section-color);
+}
 
 .team h2 {
     font-weight: 700;
@@ -120,45 +145,52 @@ body {
 }
 
 .team li {
-    background: var(--second-bg-color);
-}
-
-.team h3 {
-    font-weight: 500;
+    background: var(--nav-bar-color);
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
 }
 
+.team h3 {
+    font-weight: 500;
+}
+
 .team p {
-    color: var(--description-color);
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.18x;
-    text-align: center;
-    letter-spacing: 0.03em;
+    color: var(--descriprion-color);
 }
 
 /*Basement*/
 
 .basement {
-    background: var(--third-bg-color);
+    background: var(--second-color);
 }
+
+/*Basement_logo*/
 
 .basement-logo {
-    color: var(--second-bg-color);
+    color: var(--nav-bar-color);
 }
 
-.contacts,
-.contacts:visited {
-    color: var(--semi-transparent-text);
+/*Basement_contacts*/
+
+.basement-contacts {
+    font-style: inherit;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
-.contacts:hover {
-    color: var(--second-bg-color);
+.basement-contacts .link {
+    color: var(--basement-contakts-color);
 }
+
+.basement-contacts .link:hover,
+.basement-contacts .link:focus {
+    color: var(--nav-bar-color);
+}
+
+/*PORTFOLIO_PAGE_STYLES*/
+
