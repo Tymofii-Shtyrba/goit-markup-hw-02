@@ -8,6 +8,7 @@
     --main-text-color: #212121;
     --descriprion-color: #757575;
     --basement-contakts-color: #FFFFFF99;
+    --border-color: #EEEEEE;
 }
 
 /*Global_styles*/
@@ -89,12 +90,14 @@ body {
 }
 
 .order-button {
+    cursor: pointer;
     background: var(--first-logo-color);
     color: inherit;
     border-style: none;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
+    border-radius: 4px;
 }
 
 /*Features*/
@@ -114,7 +117,6 @@ body {
 .features p {
     color: var(--descriprion-color);
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -150,6 +152,7 @@ body {
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team h3 {
@@ -157,7 +160,6 @@ body {
 }
 
 .team p {
-    font-weight: 400;
     color: var(--descriprion-color);
 }
 
@@ -197,10 +199,11 @@ body {
 /*Filters*/
 
 .filt-but {
+    cursor: pointer;
     background: var(--team-section-color);
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
     border-style: none;
@@ -210,6 +213,7 @@ body {
 .filt-but:focus {
     background: var(--first-logo-color);
     color: var(--nav-bar-color);
+    border-radius: 4px;
 }
 
 .filters h2,
@@ -217,3 +221,23 @@ body {
     color: var(--main-color);
 }
 
+/*Projects*/
+
+.projects li {
+    background: var(--nav-bar-color);
+    border: 1px var(--border-color);
+}
+
+.projects h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+}
+
+.projects p {
+    color: var(--descriprion-color);
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+}
