@@ -194,3 +194,26 @@ body {
 
 /*PORTFOLIO_PAGE_STYLES*/
 
+/*Filters*/
+
+.filt-but {
+    background: var(--team-section-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border-style: none;
+}
+
+.filt-but:hover,
+.filt-but:focus {
+    background: var(--first-logo-color);
+    color: var(--nav-bar-color);
+}
+
+.filters h2,
+.projects h2 {
+    color: var(--main-color);
+}
+
