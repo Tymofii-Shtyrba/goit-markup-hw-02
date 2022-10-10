@@ -1,6 +1,5 @@
 :root {
-    --main-color: #F5F5F5;
-    --nav-bar-color: #FFFFFF;
+    --main-color: #FFFFFF;
     --second-color: #2F303A;
     --team-section-color: #F5F4FA;
     --first-logo-color: #2196F3;
@@ -8,7 +7,6 @@
     --main-text-color: #212121;
     --descriprion-color: #757575;
     --basement-contakts-color: #FFFFFF99;
-    --border-color: #EEEEEE;
 }
 
 /*Global_styles*/
@@ -28,8 +26,8 @@ body {
 }
 /*Navigation-bar*/
 
-.nav-bar {
-    background: var(--nav-bar-color);
+.nav-link,
+.contacts-nav {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -53,12 +51,17 @@ body {
 
 /*Navigation_links*/
 
+.nav-link .current {
+    color: var(--first-logo-color);
+}
+
 .nav-link {
     color: inherit;
 }
 
 .nav-link:hover,
-.nav-link:focus {
+.nav-link:focus,
+.current {
     color: var(--first-logo-color);
 }
 
@@ -77,7 +80,7 @@ body {
 
 .face {
     background: var(--second-color);
-    color: var(--nav-bar-color);
+    color: var(--main-color)
 }
 
 .face-header {
@@ -92,21 +95,23 @@ body {
 .order-button {
     cursor: pointer;
     background: var(--first-logo-color);
+    border-color: transparent;
+    border-radius: 4px;
     color: inherit;
-    border-style: none;
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    border-radius: 4px;
+    letter-spacing: 0.06em;
 }
 
 /*Features*/
 
-.features h2 {
-    color: var(--main-color);
+.visually-hidden {
+    visibility: hidden;
 }
 
-.features h3 {
+.featur-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -114,7 +119,7 @@ body {
     text-transform: uppercase;
 }
 
-.features p {
+.featur-descr {
     color: var(--descriprion-color);
     font-style: normal;
     font-size: 14px;
@@ -124,7 +129,7 @@ body {
 
 /*Activities gallery*/
 
-.activities h2 {
+.activities-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -138,7 +143,7 @@ body {
     background: var(--team-section-color);
 }
 
-.team h2 {
+.team-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -146,21 +151,26 @@ body {
     letter-spacing: 0.03em;
 }
 
-.team li {
-    background: var(--nav-bar-color);
+.employee {
+    background:  var(--main-color);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.employee-title  {
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    border-radius: 0px 0px 4px 4px;
 }
 
-.team h3 {
-    font-weight: 500;
-}
-
-.team p {
+.employee-position {
     color: var(--descriprion-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 /*Basement*/
@@ -172,7 +182,7 @@ body {
 /*Basement_logo*/
 
 .basement-logo {
-    color: var(--nav-bar-color);
+    color: var(--main-color);
 }
 
 /*Basement_contacts*/
@@ -185,13 +195,19 @@ body {
     letter-spacing: 0.03em;
 }
 
-.basement-contacts .link {
+.contact-first-color {
+    color: var(--main-color);
+}
+
+.contact-second-color {
     color: var(--basement-contakts-color);
 }
 
-.basement-contacts .link:hover,
-.basement-contacts .link:focus {
-    color: var(--nav-bar-color);
+.contact-first-color:hover,
+.contact-first-color:focus,
+.contact-second-color:hover,
+.contact-second-color:focus {
+    color:  var(--first-logo-color);
 }
 
 /*PORTFOLIO_PAGE_STYLES*/
@@ -201,19 +217,20 @@ body {
 .filt-but {
     cursor: pointer;
     background: var(--team-section-color);
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    border-style: none;
+    border-color: transparent;
+    border-radius: 4px;
 }
 
 .filt-but:hover,
 .filt-but:focus {
     background: var(--first-logo-color);
-    color: var(--nav-bar-color);
-    border-radius: 4px;
+    color: var(--main-color);
 }
 
 .filters h2,
@@ -223,19 +240,14 @@ body {
 
 /*Projects*/
 
-.projects li {
-    background: var(--nav-bar-color);
-    border: 1px var(--border-color);
-}
-
-.projects h3 {
+.project-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
 }
 
-.projects p {
+.project-descr {
     color: var(--descriprion-color);
     font-size: 16px;
     line-height: 1.87;
