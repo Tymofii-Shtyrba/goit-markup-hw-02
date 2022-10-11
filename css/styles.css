@@ -7,6 +7,7 @@
     --main-text-color: #212121;
     --descriprion-color: #757575;
     --basement-contakts-color: #FFFFFF99;
+    --button-active-color: #188CE8;
 }
 
 /*Global_styles*/
@@ -105,10 +106,25 @@ body {
     letter-spacing: 0.06em;
 }
 
+.order-button:hover,
+.order-button:focus {
+    background: var(--button-active-color);
+}
+
 /*Features*/
 
 .visually-hidden {
-    visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(50%);
+    clip: rect( 0 0 0 0);
+    overflow: hidden   ;
 }
 
 .feature-title {
@@ -166,7 +182,6 @@ body {
 
 .employee-position {
     color: var(--descriprion-color);
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -189,7 +204,6 @@ body {
 
 .basement-contacts {
     font-style: inherit;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -241,6 +255,7 @@ body {
 /*Projects*/
 
 .project-title {
+    color: var(--main-text-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
